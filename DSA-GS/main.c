@@ -58,10 +58,10 @@ void infoRelator(struct Relator *relator){
 // Função para cálculo da distância entre localização do ponto central e a localização da catástrofe
 double calcularDistancia(float lat1, float lon1, float lat2, float lon2) {
     // Converter graus para radianos
-    double lat1Rad = lat1 * M_PI / 180.0;
-    double lon1Rad = lon1 * M_PI / 180.0;
-    double lat2Rad = lat2 * M_PI / 180.0;
-    double lon2Rad = lon2 * M_PI / 180.0;
+    double lat1Rad = lat1 * 3.14 / 180.0;
+    double lon1Rad = lon1 * 3.14  / 180.0;
+    double lat2Rad = lat2 * 3.14  / 180.0;
+    double lon2Rad = lon2 * 3.14  / 180.0;
 
     // Diferenças das coordenadas
     double dLat = lat2Rad - lat1Rad;
